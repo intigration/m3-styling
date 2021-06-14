@@ -1,0 +1,92 @@
+table {
+  border-spacing: 0;
+  border: 1px solid $color-border;
+  border-radius: 0.04rem;
+  background-color: #fff;
+}
+
+th {
+  font-size: $font-size-th;
+  text-align: left;
+  padding: $td-padding;
+  border-right: 1px solid $color-th-border;
+  border-bottom: 1px solid $color-td-border;
+  color: $color;
+  line-height: 0.2rem;
+  font-weight: 500;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+tr td {
+  text-align: left;
+  padding: $td-padding;
+  border-bottom: 1px solid $color-td-border;
+  line-height: 0.18rem;
+}
+
+tbody:last-child tr:last-child td {
+  border-bottom: 1px solid transparent;
+}
+
+td.td-input {
+  padding: 0 0.05rem;
+  vertical-align: middle;
+}
+
+td.td-input:first-child {
+  padding-left: 0.05rem;
+}
+
+td.td-input:hover {
+  outline: 1px solid $color-input-border-hover;
+}
+
+td.td-input .input {
+  resize: none;
+  background: transparent;
+  outline: none;
+  padding-left: $td-padding;
+}
+
+td.td-input:first-child .input {
+  padding-left: $table-padding;
+}
+
+table.grid,
+table.grid td {
+  border: none;
+  vertical-align: text-top;
+}
+
+tr.deleted {
+  text-decoration: line-through;
+  color: $color-gray !important;
+}
+
+tr.deleted td a {
+  color: $color-gray !important;
+}
+
+tr td a .iconfont {
+  font-size: 0.14rem;
+}
+
+tr:hover {
+  outline: 1px solid $color-primary;
+}
+
+tr:hover a {
+  color: $color-primary;
+}
+
+tr a:hover {
+  text-decoration: underline;
+}
+
+td img {
+  height: 0.16rem;
+  vertical-align: middle;
+}
